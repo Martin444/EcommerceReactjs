@@ -20,7 +20,7 @@ export class Cart extends Component {
                         cart.map(item =>(
                             // console.log(item)
                             <div className="details cart" key={item.id}>
-                                <img src={item.src} alt=""/>
+                                <img src={item.src} alt="" className='imageCart'/>
                                 <div className="box">
                                     <div className="row">
                                         <h2>{item.title}</h2>

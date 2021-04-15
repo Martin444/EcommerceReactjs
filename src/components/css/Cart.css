@@ -2,22 +2,29 @@ section .cart{
     position: relative;
     border: 1px solid #2A302C;
     padding-top: 820px;
+    margin: auto;
+    display: flex;
     color:white;
+    justify-content: left;
 }
 
 
 .conten-cart{
-    background-color: #2A302C;
+    /* background-color: #2A302C; */
     width: 100%;
     height: 100vh;
     padding-top: 30px;
     /* z-index: -1; */
-
+    
     /* width: 100%; */
     /* max-width: 1200px; */
     display: flex;
     flex-direction: column;
     margin:0 auto;
+    justify-content: left;
+}
+.imageCart{
+    width: 300px;
     justify-content: left;
 }
 
@@ -50,8 +57,8 @@ section .cart{
 }
 .delete{
     /* width: 50px; */
- 
-   
+    
+    
     cursor: pointer;
     font-weight: 600;
     font-size: 20px;
@@ -83,7 +90,8 @@ section .cart{
 
 @media (max-width: 769px){
     .conten-cart{
-        background-color: #2A302C;
+        background-color: #2A3;
+        /* background-color: #2A302C; */
         width: 100%;
         padding-top: 100px;
         /* width: 100%; */
@@ -94,9 +102,8 @@ section .cart{
     }
     .delete{
         /* width: 50px; */
-        position: absolute;
-        top:30px;
-        right: 5px;
+        position: relative;
+    
         cursor: pointer;
         font-weight: 600;
         font-size: 20px;

@@ -122,9 +122,10 @@ export default function FormProduct() {
 const DivForm = styled.div`
     width: 100%;
     display: flex;
-    justify-content: center;
-    
+    /* justify-content: center; */
     padding: 20px;
+    
+    /* padding: 20px; */
     .containerForm{
         width: 100%;
     }
@@ -159,13 +160,12 @@ const DivForm = styled.div`
     }
  
     @media (max-width: 769px){
-        /* display: block; */
+        display: block;
         /* justify-content: center; */
         width: 90%;
 
         .containerForm{
-            width: 300px;
-            justify-content: center;
+            width: 70%;
             align-self: auto;
             align-content:center;
             display: flex;
@@ -178,7 +178,7 @@ const DivForm = styled.div`
             /* margin: 10px; */
             display: block;
             width: 100%;
-            border-radius: 5px;
+            border-radius: 10px;
         }
         
         .btn-load{
