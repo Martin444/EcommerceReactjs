@@ -1,0 +1,111 @@
+section .cart{
+    position: relative;
+    border: 1px solid #2A302C;
+    padding-top: 820px;
+    color:white;
+}
+
+
+.conten-cart{
+    background-color: #2A302C;
+    width: 100%;
+    height: 100vh;
+    padding-top: 30px;
+    /* z-index: -1; */
+
+    /* width: 100%; */
+    /* max-width: 1200px; */
+    display: flex;
+    flex-direction: column;
+    margin:0 auto;
+    justify-content: left;
+}
+
+.row {
+    color:  #67B31B;
+}
+
+/* .details{
+    width: 1200px;
+} */
+.amount span{
+    color: #67B31B;
+    padding: 0 24px;
+}
+.amount .count{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+}
+.amount{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.delete{
+    /* width: 50px; */
+ 
+   
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+    color: #67B31B;
+}
+
+
+
+.total{
+    background-color: #2A302C;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.total a{
+    text-decoration: none;
+    background: #67B31B;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 25px;
+}
+.total h3{
+    /* margin-right: 50px; */
+    color: #67B31B;
+}
+
+@media (max-width: 769px){
+    .conten-cart{
+        background-color: #2A302C;
+        width: 100%;
+        padding-top: 100px;
+        /* width: 100%; */
+        /* max-width: 1200px; */
+        display: block;
+        margin:0 auto;
+        justify-content: center;
+    }
+    .delete{
+        /* width: 50px; */
+        position: absolute;
+        top:30px;
+        right: 5px;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 20px;
+        color: #67B31B;
+        padding-right: 20px;
+    }
+    .total{
+        background-color: #2A302C;
+        width: 100%;
+        justify-content: space-around;
+    }
+}
