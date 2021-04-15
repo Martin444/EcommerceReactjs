@@ -2,7 +2,7 @@ section .cart{
     position: relative;
     border: 1px solid #2A302C;
     padding-top: 820px;
-    margin: auto;
+    margin: 10px auto;
     display: flex;
     color:white;
     justify-content: left;
@@ -10,7 +10,7 @@ section .cart{
 
 
 .conten-cart{
-    /* background-color: #2A302C; */
+    background-color: #2A302C;
     width: 100%;
     height: 100vh;
     padding-top: 30px;
@@ -90,8 +90,7 @@ section .cart{
 
 @media (max-width: 769px){
     .conten-cart{
-        background-color: #2A3;
-        /* background-color: #2A302C; */
+        background-color: #2A302C;
         width: 100%;
         padding-top: 100px;
         /* width: 100%; */
