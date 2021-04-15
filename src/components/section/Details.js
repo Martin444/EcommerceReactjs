@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import {DataContext} from '../Context'
 import {Link} from 'react-router-dom'
-import Colors from './Colors'
 import '../css/Details.css'
 
 

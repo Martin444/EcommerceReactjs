@@ -123,11 +123,16 @@ const Card = styled.div`
     border-radius: 10px;
     border: 1px solid #ccc;
     margin-bottom: 15px;
-    padding: 10px;
+    padding: 0px;
     
     .blackback{
-        padding: 10px;
+        padding: 20px;
         background-color: #0F3B1E;
+    }
+    
+    .whiteBack{
+        padding: 20px;
+
     }
 
     .row-title{
@@ -178,6 +183,11 @@ const Card = styled.div`
     }
 
     @media screen and (max-width: 768px){
+
+        .whiteBack{
+            padding: 10px;
+        }
+
         .column-info{
             margin-top: 5px;
             padding-top: 5px;

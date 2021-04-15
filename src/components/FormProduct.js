@@ -126,17 +126,23 @@ const DivForm = styled.div`
     padding: 20px;
     
     /* padding: 20px; */
-    .containerForm{
+    .containerFotm{
+        display: flex;
         width: 100%;
-    }
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        margin: auto;
 
+    }
+    
     .inputer{
         width: 14%;
         padding: 10px;
         margin: 8px 2px;
         border-radius: 5px;
     }
-
+    
     h1{
         color:white;
     }
@@ -164,12 +170,17 @@ const DivForm = styled.div`
         /* justify-content: center; */
         width: 90%;
 
+        h1{
+            font-size: 30px;
+        }
+
         .containerForm{
             width: 70%;
             align-self: auto;
             align-content:center;
             display: flex;
             margin: 0 auto;
+            background-color:red;
             align-items: center;
         }
 

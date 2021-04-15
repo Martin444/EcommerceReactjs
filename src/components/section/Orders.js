@@ -45,11 +45,12 @@ const Content = styled.div`
     display: flex;
     justify-content: center;
     padding-top: 90px;
+
     background-color: #2A302C;
     color: white;
     
     .contentpage{
-        width:1200px;
+        width: 90%;
         display: block;
         margin: 0 auto;
     }
@@ -59,6 +60,12 @@ const Content = styled.div`
     }
 
     @media screen and (min-width: 768px){
+
+        .contentpage{
+            width:70%;
+            display: block;
+            margin: 0 auto;
+        }
 
     }
 `

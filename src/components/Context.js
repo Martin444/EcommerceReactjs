@@ -83,7 +83,6 @@ export class DataProvider extends Component {
     }
 
     removeProductAdmin = (product) =>{
-        console.log(product.uid)
         firebase.firestore().collection('products').doc(product.uid).delete();
     }
 
@@ -160,13 +159,16 @@ export class DataProvider extends Component {
           if(this.state.user){
               if(this.state.user.admin){
                   firebase.firestore().collection('orders').orderBy('completed','asc').onSnapshot(snapshoot => {
-                      console.log(snapshoot)
-                  })
-                  
-                  
-                } else {
-                      firebase.firestore().collection('orders').where('userID','==', this.state.user.uid).onSnapshot(snapshoot => {
-                        console.log(snapshoot)
+                    console.log('Holas' + snapshoot.docs );
+                    
+                    this.setState({orders: snapshoot.docs, userAdmin: true})
+                })
+                
+                
+            } else {
+                firebase.firestore().collection('orders').where('userID','==', this.state.user.uid).onSnapshot(snapshoot => {
+                          console.log('Holas' + snapshoot.docs );
+                        this.setState({orders: snapshoot.docs, userAdmin: false})
                     })
                       
                       
@@ -200,11 +202,11 @@ export class DataProvider extends Component {
         const dataUser = JSON.parse(localStorage.getItem('Useres'));
         if(dataUser !== null){
            firebase.firestore().collection('users').doc(dataUser.uid).onSnapshot(snap =>{
-               console.log(snap.data())
-                   this.setState({user: snap.data()});
-
-                   if(this.state.user){
-                       if(this.state.user.admin){
+               this.setState({user: snap.data()});
+               
+               if(this.state.user){
+                   if(this.state.user.admin){
+                           console.log('Holas4');
                            
                            firebase.firestore().collection('orders').orderBy('completed', 'asc').onSnapshot(snapshoot => {
                                this.setState({orders: snapshoot.docs, userAdmin: true})
@@ -213,7 +215,6 @@ export class DataProvider extends Component {
                                firebase.firestore().collection('orders').where('userID','==', this.state.user.uid).orderBy('completed', 'asc').onSnapshot(snapshoot => {
                                    this.setState({orders: snapshoot.docs, userAdmin: false})
                                })
-           
                        }
                    }
            });

@@ -44,21 +44,22 @@ const Bann = styled.div`
     }
 
     @media screen and (max-width: 768px){
+        width: 100%;
         .ban-content{
             margin: 0;
             padding:0 auto;
             display: block;
             justify-content: center;
             height: 100%;
-            margin-top:90px;
+            margin-top:30px;
         }
         .title{
             text-align:center;
-            font-size: 50px;
+            font-size: 40px;
         }
 
         h3{
-            font-size: 30px;
+            font-size: 20px;
         }
     }
 

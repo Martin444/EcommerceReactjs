@@ -23,7 +23,6 @@ export class Header extends Component {
     render() {
         const {toggle} = this.state;
         const {cart, user} = this.context;
-        console.log(user)
         return (
             <header>
                     <div className="menu" onClick={this.menuToggle}>
