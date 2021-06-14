@@ -101,6 +101,7 @@ export class DataProvider extends Component {
             }]
 
             this.setState({cart:[...cart,...data], total: producter.price})
+            this.getTotal();
 
         } else {
             alert("Este producto ya fue añadido al carrito")
@@ -230,7 +231,7 @@ export class DataProvider extends Component {
         const {addCart,reduction,increase,removeProduct,getTotal, loginGoogle, resetData, logOut, removeProductAdmin} = this;
         return (
             <DataContext.Provider 
-            value={{products, addCart, cart, reduction,increase,removeProduct,total,getTotal, loginGoogle, user, resetData, orders, logOut, userAdmin, removeProductAdmin}}>
+            value={{products, addCart, cart, reduction,increase,removeProduct,total,getTotal, loginGoogle, user, resetData, orders, logOut, userAdmin, removeProductAdmin,}}>
                 {this.props.children}
             </DataContext.Provider>
         )
