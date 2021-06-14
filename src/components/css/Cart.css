@@ -58,9 +58,9 @@ section .cart{
 .delete{
     /* width: 50px; */
     
-    
+    margin-left: 6rem;
     cursor: pointer;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 20px;
     color: #67B31B;
 }
@@ -74,6 +74,9 @@ section .cart{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    display: flex;
+    position: fixed;
+    bottom: 0px;
 }
 .total a{
     text-decoration: none;
@@ -81,18 +84,20 @@ section .cart{
     color: white;
     text-transform: uppercase;
     letter-spacing: 2px;
-    padding: 10px 25px;
+    padding: 10px 65px;
 }
 .total h3{
     /* margin-right: 50px; */
-    color: #67B31B;
+    color:white;
+    font-weight: 500;
+    font-size: 25px;
 }
 
 @media (max-width: 769px){
     .conten-cart{
         background-color: #2A302C;
         width: 100%;
-        padding-top: 100px;
+        padding-top: 10px;
         /* width: 100%; */
         /* max-width: 1200px; */
         display: block;
@@ -101,10 +106,10 @@ section .cart{
     }
     .delete{
         /* width: 50px; */
-        position: relative;
+        /* position: relative; */
     
         cursor: pointer;
-        font-weight: 600;
+        font-weight: 400;
         font-size: 20px;
         color: #67B31B;
         padding-right: 20px;
@@ -113,5 +118,8 @@ section .cart{
         background-color: #2A302C;
         width: 100%;
         justify-content: space-around;
+        display: flex;
+        position: fixed;
+        bottom: 0px;
     }
 }
