@@ -160,7 +160,6 @@ export class DataProvider extends Component {
           if(this.state.user){
               if(this.state.user.admin){
                   firebase.firestore().collection('orders').orderBy('completed','asc').onSnapshot(snapshoot => {
-                    console.log('Holas' + snapshoot.docs );
                     
                     this.setState({orders: snapshoot.docs, userAdmin: true})
                 })
@@ -168,7 +167,6 @@ export class DataProvider extends Component {
                 
             } else {
                 firebase.firestore().collection('orders').where('userID','==', this.state.user.uid).onSnapshot(snapshoot => {
-                          console.log('Holas' + snapshoot.docs );
                         this.setState({orders: snapshoot.docs, userAdmin: false})
                     })
                       
@@ -207,7 +205,6 @@ export class DataProvider extends Component {
                
                if(this.state.user){
                    if(this.state.user.admin){
-                           console.log('Holas4');
                            
                            firebase.firestore().collection('orders').orderBy('completed', 'asc').onSnapshot(snapshoot => {
                                this.setState({orders: snapshoot.docs, userAdmin: true})
