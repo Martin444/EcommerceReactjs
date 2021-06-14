@@ -180,7 +180,7 @@ const DivForm = styled.div`
             align-content:center;
             display: flex;
             margin: 0 auto;
-            background-color:red;
+            // background-color:red;
             align-items: center;
         }
 

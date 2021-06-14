@@ -12,7 +12,6 @@ export class Products extends Component {
 
     render() {
         const {products,addCart, userAdmin, removeProductAdmin} = this.context;
-
         
 
 
